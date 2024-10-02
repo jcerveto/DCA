@@ -37,6 +37,12 @@ class CreateCommunicationPage(Page):
                 self.press_enter_to_continue()
                 raise KeywordException(CoreFunctions.START)
 
+            print(f'Se mostrarán los issues en memoria: ')
+            for issue in self.cli.storage.issues:
+                print(issue.small_info())
+            if len(self.cli.storage.issues) == 0:
+                print('No hay issues para mostrar.\n')
+
             title = DataInputFactory.create('Introduce el título de tu comunicación: ')
             description = DataInputFactory.create('Introduce la descripción de tu comunicación: ')
 

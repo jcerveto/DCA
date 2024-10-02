@@ -45,6 +45,9 @@ class Bug:
     def full_info(self) -> str:
         return f'{self}{self.thread()}'
 
+    def small_info(self) -> str:
+        return f'#{self.bug_id}\t {self.title}'
+
     def thread(self) -> str:
         if len(self.communications) == 0:
             return '\n\tEste issue no tiene ninguna comunicación asociada.'

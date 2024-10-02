@@ -30,11 +30,13 @@ class CreateBugPage(Page):
         title = DataInputFactory.create('Introduce el título: ')
         description = DataInputFactory.create('Introduce la descripción: ')
 
-        category = DataInputFactory.create('Introduce la categoría: ')
+        category = DataInputFactory.create(f'Introduce una categoría de las siguientes: \n'
+                                           f'{' '.join(self.CATEGORIES.values())}\n'
+                                           f'Introduce la categoría: ')
         category.encoding = category.encoding.upper()
         while category.encoding not in self.CATEGORIES.values():
-            category = DataInputFactory.create(f'ERROR: La categoría introducida no existe. '
-                                               f'La categoría {category.encoding} no está en la lista: \n'
+            print(f'ERROR: La categoría introducida no existe. ')
+            category = DataInputFactory.create(f'La categoría {category.encoding} no está en la lista: \n'
                                                f'{' '.join(self.CATEGORIES.values())}\n'
                                                f'Introduce la categoría: ')
 

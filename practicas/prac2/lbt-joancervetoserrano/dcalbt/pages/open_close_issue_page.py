@@ -20,6 +20,11 @@ class OpenCloseIssuePage(Page):
 
     def handle_input(self) -> None:
         try:
+            print(f'Se mostrarán los issues en memoria: ')
+            for issue in self.cli.storage.issues:
+                print(issue.small_info())
+            if len(self.cli.storage.issues) == 0:
+                print('No hay issues para mostrar.\n')
             self.response = DataInputFactory.create('Introduce el identificador del issue: ')
             self.response.encoding.replace(' ', '').replace('#', '')
 

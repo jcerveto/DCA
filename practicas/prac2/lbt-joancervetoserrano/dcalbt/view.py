@@ -36,8 +36,8 @@ class View:
 
     def footer(self) -> str:
         content = (f'{self.ROW}\n'
-                   f'iteration: {self.iteration}\t\tpage: {self.current_page.__class__.__name__}\t\t'
-                   f'[:q :quit :p :prev :s :start]\n'
+                   f'page: {self.current_page.__class__.__name__}\t\t'
+                   f'[:q :quit :p :prev :s :start :h :help]\n'
                    f'{self.ROW}')
 
         return content
