@@ -28,7 +28,8 @@ alias.br=branch
 * git bisect reset 
 
 
-- Se ha creado un Git Hook para darle una categoría al commit en el mensaje. Las categorías serán las siguientes: types=("feat" "fix" "docs" "style" "refactor" "test" "chore" "rearrange")
+- Se ha creado un Git Hook para añadir el usuario que ha hecho el commit entre corchetes de manera automática. 
+De manera que un commit sencillo: "testing hooks..."
+se transofrme en "[jcerveto] testing hooks..."
 
-.
-
+Para ello se ha modificado el archivo .git/hooks/prepare-commit-msg.
