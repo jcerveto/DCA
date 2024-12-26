@@ -1,0 +1,30 @@
+Práctica 4: Compilación de grandes proyectos.
+30 de octubre de 2024.
+Joan Cerveto Serrano. DCA. UA
+
+Se ha utilizado el siguiente proyecto para realizar los experimentos:
+Humdrum Tools. Herramienta en c++ para operar con documentos musicales, usando la codificación **kern.
+https://github.com/humdrum-tools/humdrum-tools.git
+
+
+Pregunta: Bien con una práctica tuya, bien con un código descargado, comprueba tiempos de ejecución de la compilación con diversos valores para N en -jN. ¿A partir de qué valores de N ya no supone una mejora sustancial el incremento en el número de trabajos en paralelo?
+Respuesta: Los tiempos son los siguientes:
+comando			tiempo
+time make CXX=distcc	31,45s
+"" "" "" -j8		15,56
+"" "" "" -j12		19,85s
+"" "" "" -j16		18,48s
+"" "" "" -j24		22,13s
+
+Desde luego, la ejecución sin paralelizar es la más lenta de todas (31,45s). Sin embargo, la mejor versión de ejecución es com 8 hilos. Se han usado dos de los PCs de clase. Cada uno tiene 6 hilos reales, aunque se comportan como 12 hilos virtuales. Aunque cada uno de estos hilos virtuales solo tiene un 30% de los hilos reales.  
+
+Pregunta: ¿Hay fallos de compilación con ejecuciones en paralelo? Si es así trata de ver por qué se producen y procura solucionarlos.
+Respusta: No. No ha habido fallos distinos en paralelo que en secuencial. 
+
+Pregunta: Bien con una práctica tuya, bien con un código descargado, comprueba tiempos de ejecución de la compilación usando y sin usar ccache.
+Respuesta: Contestada con anterioridad.
+
+Pregunra: Configura un par de máquinas del laboratorio para aceptar solicitudes de distcc y bien con una práctica tuya, bien con un código descargado, comprueba tiempos de ejecución de la compilación al usar distcc y comparalos cuando se compila todo el código en tu máquina.
+Respuesta: Los tiempos han sido los mismos ejecutándose indistintamente en un ordenador o otro. Se han utilizado los PCs del aula del laboratorio, por lo que todos tienen especificaciones idénticas. 
+
+

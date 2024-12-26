@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Wed, 09 Oct 2024 16:52:13 +0000
+Source: helloworlddca
+Binary: helloworlddca helloworlddca-dbgsym
+Architecture: source arm64
+Version: 1.0-1
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: root <mail@provider.com>
+Changed-By: root <mail@provider.com>
+Description:
+ helloworlddca - <insert up to 60 chars description>
+Changes:
+ helloworlddca (1.0-1) UNRELEASED; urgency=medium
+ .
+   * Initial release. (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ b55b289ae8104ecfb90e4569e80e7dc7c0ed0124 850 helloworlddca_1.0-1.dsc
+ b2586d6198acad2abe7136e9725c2f1df8bacd52 420 helloworlddca_1.0.orig.tar.gz
+ 88ddabc5ab6f157eafd2c21df47541772d792c39 8984 helloworlddca_1.0-1.debian.tar.xz
+ 609a059c7ac62c39924825495623d8b377def4e1 2320 helloworlddca-dbgsym_1.0-1_arm64.deb
+ 39d5332957311b1af31a60b0840d63d413ee5468 5346 helloworlddca_1.0-1_arm64.buildinfo
+ d5e03f8e2b473ae99ff0b7adea678721f3cfff69 4172 helloworlddca_1.0-1_arm64.deb
+Checksums-Sha256:
+ e2dfe9f0ddf759482fd0154928846b5e5a95275272444286a679a91280f2a2a7 850 helloworlddca_1.0-1.dsc
+ 928f3b1e4673141021aa8c28a94a230a25acf670d2b832ac7085d76593b2d333 420 helloworlddca_1.0.orig.tar.gz
+ fd286fb41155a5896ad582ccc4cc78760f8c9bd06c5ed16dcc8aa328be9ec558 8984 helloworlddca_1.0-1.debian.tar.xz
+ 2c46babe82860727b1dbbe929de2df8af8357bd5f6419e52090bbc4f653f811b 2320 helloworlddca-dbgsym_1.0-1_arm64.deb
+ 536c0832ac2d2f90e9e18509a9aa58d6b5ceec7fd11d246eec8168fafb6c7c05 5346 helloworlddca_1.0-1_arm64.buildinfo
+ 6154a4e47a4c834938d69d0f2a615b393192155c252bb6e270e74fdcc4ee3b48 4172 helloworlddca_1.0-1_arm64.deb
+Files:
+ dc452125a2407b9986339a1a1be76d89 850 unknown optional helloworlddca_1.0-1.dsc
+ 4c5afa2039353d6a77abacb2e6c9d46a 420 unknown optional helloworlddca_1.0.orig.tar.gz
+ 5d1c1070223313f42a101d3d3c96916d 8984 unknown optional helloworlddca_1.0-1.debian.tar.xz
+ 5f6c1c279fc860bbc7431cb8a1a7dcb6 2320 debug optional helloworlddca-dbgsym_1.0-1_arm64.deb
+ ea6e134446d1e0b62ba9b7b2958ad3b9 5346 unknown optional helloworlddca_1.0-1_arm64.buildinfo
+ bc27424a03d610f87e36f88e681cb396 4172 unknown optional helloworlddca_1.0-1_arm64.deb

@@ -1,0 +1,12 @@
+Package: helloworlddca-dbgsym
+Source: helloworlddca
+Version: 1.0-1
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: root <mail@provider.com>
+Installed-Size: 16
+Depends: helloworlddca (= 1.0-1)
+Section: debug
+Priority: optional
+Description: debug symbols for helloworlddca
+Build-Ids: 85cc23feeabae94e8c66619d3030e62c3dda9b47

@@ -1,0 +1,29 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en\n"
+
+msgid "Si estirem tots ella caurà"
+msgstr "If we all pull, it will fall"
+
+msgid "T'estime, t'estimo, t'estim"
+msgstr "I love you"
+
+msgid "No hi havia a València dos amants com nosaltres"
+msgstr "There were no two lovers in Valencia like us"
+
+msgid "Tinc un cel i un infern"
+msgstr "I have a heaven and a hell"
+
+msgid "Cau la calor a la Safor bombeja el ritme"
+msgstr "The heat in Safor pumps the rhythm"
+
+msgid "Benvingut a la nostra aplicació!"
+msgstr "Welcome to the app!"
+
+
+msgid "Escriu qualsevol cosa per a llegir un vers. Prem [q] per a eixir: "
+msgstr "Write anything to read a verse. Press [q] to exit: "
+
+msgid "Salut!"
+msgstr "Bye bye!"

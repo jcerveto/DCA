@@ -1,0 +1,17 @@
+Compilando con autotools:
+cd autotools
+aclocal
+autoconf
+automake --add-missing
+./configure
+make
+
+Compilando con cmake:
+cd cmake
+mkdir build
+cd build
+cmake ..
+make
+
+
+

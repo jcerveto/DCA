@@ -1,0 +1,17 @@
+Se puede ejcutar usando el Makefile:
+- make all (los dos tests)
+- make build-catch
+- make build-boost
+- make clean
+
+
+El make internamente lleva acabo los siguientes comandos. 
+1. Compilación y ejecución.
+mkdir -p build
+cd build
+cmake ..
+cmake --build .
+ctest
+
+2. Limpiar build
+rm -rf build

@@ -1,0 +1,21 @@
+Se ha añadido una cabecera al principio de cada *.po tal que:
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ca\n"
+
+Se construyen los *.mo de la siguiente manera desde el directorio app.
+msgfmt -o locale/es/LC_MESSAGES/m.mo locale/es/LC_MESSAGES/m.po
+msgfmt -o locale/en/LC_MESSAGES/m.mo locale/en/LC_MESSAGES/m.po
+msgfmt -o locale/ca/LC_MESSAGES/me.mo locale/ca/LC_MESSAGES/m.po
+
+No se requiere ninguna dependencia externa. 
+Ejecuta en varios idiomas:
+LANG=ca_ES python3 app.py
+LANG=es_ES python3 app.py
+LANG=en_US python3 app.py
+
+Los textos originales están en valenciano.
+
+Se pueden borrar fácilmente los binarios con:
+find . -name "*.mo" -delete

@@ -1,0 +1,11 @@
+# Catch2 Tests
+add_executable(tests_calculadora_catch tests_calculadora_catch.cpp)
+target_include_directories(tests_calculadora_catch PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/catch)
+target_link_libraries(tests_calculadora_catch PRIVATE calculadora)
+add_test(NAME Catch2Tests COMMAND tests_calculadora_catch)
+
+# Boost.Test Tests
+find_package(Boost REQUIRED COMPONENTS unit_test_framework)
+add_executable(tests_calculadora_boost tests_calculadora_boost.cpp)
+target_link_libraries(tests_calculadora_boost PRIVATE calculadora Boost::unit_test_framework)
+add_test(NAME BoostTests COMMAND tests_calculadora_boost)

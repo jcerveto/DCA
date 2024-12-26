@@ -1,0 +1,8 @@
+Package: helloworld
+Priority: optional
+Section: misc
+Maintainer: dca
+Architecture: amd64
+Version: 1.0
+Depends:
+Description: Increible implementacion de HolaMundoAl ser ejecutado, imprime una linea en el terminal con eltexto 'Hola Mundo'.
