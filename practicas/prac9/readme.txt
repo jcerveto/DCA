@@ -31,3 +31,4 @@ alias.br=branch
 - Se ha creado un Git Hook para darle una categoría al commit en el mensaje. Las categorías serán las siguientes: types=("feat" "fix" "docs" "style" "refactor" "test" "chore" "rearrange")
 
 .
+
