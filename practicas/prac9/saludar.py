@@ -10,7 +10,7 @@ def saludar_adi():
 
 
 
-def saludar_todos()
+def saludar_todos():
     saludar_dca()
     saludar_mads()
     saludar_adi()
