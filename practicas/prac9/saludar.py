@@ -5,6 +5,9 @@ def saludar_dca():
 def saludar_todos():
     saludar_dca()
 
+def saludar_adi():
+    print("Hola, soy ADI")
+
+
 if __name__ == "__main__":
     saludar_todos()
-    
